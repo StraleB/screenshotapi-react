@@ -1,13 +1,111 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background:url('https://images.unsplash.com/photo-1519405530001-3b5e82ba4dac?ixlib=rb-1.2.1&auto=format&fit=crop&w=2125&q=80');
+  /*Photo by Dane Deaner https://unsplash.com/@danedeaner*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+}
+
+form{
+  margin: 10em 35%;
+}
+
+form input{
+  height: 3em;
+  width: 40em;
+  text-align: center;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 3px 2px 12px 2px rgba(73, 73, 73, 0.233);
+}
+
+
+
+form button{
+  margin-top: 2em;
+  background-color: rgb(41, 41, 41);
+  width: 17em;
+  border: transparent;
+  height: 2em;
+  font-size: 2em;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+form button:hover{
+  background-color: rgb(70, 70, 70);
+}
+
+
+p{
+  color:rgb(2, 2, 2);
+margin: -17em 45%;
+width: 100%;
+font-size: 1rem;
+}
+
+
+img{
+  height: 30em;
+  width: 60em;
+  margin: -8em 25%;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.404);
+}
+
+@media screen and (max-width: 1366px){
+  img{
+    height: 25em;
+    width: 45em;
+    margin: -8em 29%;
+  }
+
+  p{
+    color:rgb(2, 2, 2);
+  margin: -17em 49%;
+  }
+
+  form button{
+    width: 16.5em;
+  }
+
+}
+
+
+@media screen and (max-width: 1280px){
+  img{
+    height: 25em;
+    width: 46em;
+    margin: -8em 26%;
+  }
+
+  p{
+    color:rgb(2, 2, 2);
+  margin: -17em 50%;
+  }
+}
+
+
+@media screen and (max-width: 1050px){
+  img{
+    height: 25em;
+    width: 46em;
+    margin: -8em 15%;
+  }
+
+  p{
+    color:rgb(2, 2, 2);
+  margin: -17em 50%;
+  }
+
+  form{
+    margin: 10em 25%;
+  }
 }
